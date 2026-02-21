@@ -342,6 +342,19 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+  // 16
+  const animateBut = document.querySelector('[data-js="t16-animate"]')
+  const sixteenBox = document.querySelector('[data-js="t16-box"]')
+
+  animateBut.addEventListener('click', () => {
+    sixteenBox.classList.add('anim-bounce')
+
+    setTimeout(() => {
+      sixteenBox.classList.remove('anim-bounce')
+    }, 1000)
+  })
+
+
 
 // 17
   const seventeenArea = document.querySelector('[data-js="t17-area"]')
